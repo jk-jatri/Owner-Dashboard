@@ -11,7 +11,22 @@ $(".toggle-password").click(function () {
 
 $(function(){
   $('.SlideDownMenu').on('click', '.MenuTab', function () {
-    $('#bottomnav').slideToggle('fast');
+    $('#bottomnav').slideToggle();
     return false;
   });
 });
+
+let map;
+
+function initMap() {
+  const myLatLng = { lat: 23.8103, lng: 90.4125 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: myLatLng,
+  });
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Hello World!",
+  });
+}

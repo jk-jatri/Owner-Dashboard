@@ -10,6 +10,22 @@ $(".toggle-password").click(function () {
 });
 
 
+let map;
+
+function initMap() {
+  const myLatLng = { lat: 23.8103, lng: 90.4125 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: myLatLng,
+  });
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Hello World!",
+  });
+}
+
+
 // Dashboard Filter
 // filterSelection("all")
 // function filterSelection(c) {

@@ -59,25 +59,27 @@
 
 
 .tab_menu_set,
-.tab_filter{
+.tab_filter {
     background-color: #fff;
 }
 
-.tab_filter{
-    box-shadow: 13px 7px 14px 4px #dddddd80;
+.common_result {
     overflow-x: hidden;
     overflow-y: scroll;
+    height: 200px;
 }
 
-.tab_filter_result{
+.tab_filter_result {
     width: 70% !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-#myInput:focus{
+
+#myInput:focus {
     border: 0;
     outline: 0;
 }
+
 #myInput {
     background-image: url('/images/searchicon.png');
     background-position: 10px 12px;
@@ -90,11 +92,11 @@
     margin-bottom: 12px;
 }
 
-.filter_btn_row{
+.filter_btn_row {
     margin: 10px 5px;
 }
 
-.filter_btn{
+.filter_btn {
     background-color: #EBEBEB !important;
     border-radius: 25px !important;
     border: none;
@@ -105,72 +107,73 @@
 
 .filter_btn.active,
 .filter_btn:focus,
-.filter_btn:hover{
+.filter_btn:hover {
     background-color: #FF6347 !important;
     color: #fff !important;
     transition: 0.4s;
 }
 
-.filter_content div{
+.filter_content div {
     padding: 10px 5px;
     border-bottom: 1px solid #dddddd91;
 }
-.filter_content{
+
+.filter_content {
     text-decoration: none;
 }
 
-.filter_content div h5{
+.filter_content div h5 {
     font-size: 16px;
     color: #000;
 }
 
-.filter_content div p{
+.filter_content div p {
     color: #666666;
     line-height: 8px;
 }
 
-.filter_content div p:first-child{
+.filter_content div p:first-child {
     font-size: 15px !important;
 }
 
-.filter_content div p:last-child{
+.filter_content div p:last-child {
     font-size: 14px !important;
 }
 
-.filter_content:hover div{
+.filter_content:hover div {
     background-color: rgb(255, 99, 71, 7%);
     transition: 0.3s;
 }
 
-.filter_content:hover h5{
+.filter_content:hover h5 {
     color: #FF6347;
     transition: 0.4s;
 }
 
-.status_on{
+.status_on {
     color: #42B32D;
 }
 
-.status_off{
+.status_off {
     color: #FF3E14;
 }
 
 
 /* Custom ScrollBar */
-.tab_filter::-webkit-scrollbar {
+.common_result::-webkit-scrollbar {
     width: 5px;
 }
-  
-.tab_filter::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+
+.common_result::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
-   
-.tab_filter::-webkit-scrollbar-thumb {
-    background: #888; 
+
+.common_result::-webkit-scrollbar-thumb {
+    background: #FF6347;
 }
-  
-.tab_filter::-webkit-scrollbar-thumb:hover {
-    background: #FF6347; 
+
+.common_result::-webkit-scrollbar-thumb:hover {
+    background: #f83e1d;
 }
 
 /* ===================== Mobile design start ======================= */
@@ -178,134 +181,159 @@
     position: fixed;
     bottom: 25px;
     width: 100%;
-    background-color: #FF6347;
-    border-radius: 18px 18px 0 0;
-  }
-  .SlideDownMenu nav {
+    /* height: 400px; */
     background-color: #fff;
-    display: none;
+    border-radius: 18px 18px 0 0;
+}
+
+.SlideDownMenu nav {
+    background-color: #fff;
+    /* display: none; */
     height: auto;
     bottom: 0;
-  }
+}
 
-  /*Menu Tap*/
+/*Menu Tap*/
 .MenuTab {
     margin: 0 auto;
-    display: block;
+    /* display: block; */
+    /* height: 400px; */
     width: 40px;
     position: relative;
-  }
-  /*Nav Tap*/
-  .slideNavTab {
-      text-align: center;
-      width: 60px;
-      background: #FF6347;
-      height: 25px;
-  }
-  /*Border*/
-  .slideNavTab a {
+}
+
+/*Nav Tap*/
+.slideNavTab {
+    text-align: center;
+    width: 60px;
+    /* background: #FF6347; */
+    height: 25px;
+}
+
+/*Border*/
+.slideNavTab a {
     position: absolute;
     top: 25px;
     padding-left: 25px;
-  }
-   
-  .slideNavTab a:before {
+}
+
+#bottomnav{
+    display: block;
+}
+
+.slideNavTab a:before {
     content: "";
     position: absolute;
     bottom: 16px;
     left: 0;
     width: 25px;
     height: 0.125em;
-    border-bottom: 0.2em solid #fff;
-  }
+    border-bottom: 0.2em solid #ddd;
+}
 
-  .SlideDownMenu ul {
+.SlideDownMenu ul {
     list-style: outside none none;
     margin: 0;
     padding: 22px 0;
     text-align: center;
 }
+
 .SlideDownMenu ul li {
-  display: inline-block;
+    display: inline-block;
 }
+
 .SlideDownMenu ul li a {
-  position:relative;
-  z-index: 1;
-  display: block;
-  padding: 12px 20px;
-  text-decoration: none;
-  color: #000;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin: 0 10px;
+    position: relative;
+    z-index: 1;
+    /* display: block; */
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
 }
+
 .SlideDownMenu ul li a:hover {
-  color: #fff;
+    color: #fff;
 }
+
 .SlideDownMenu ul li a:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  height: 1px;
-  content: '.';
-  color: transparent;
-  background: #8e44ad;
-  border-radius:5px;
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
-  transition: all .5s;
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #8e44ad;
+    border-radius: 5px;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+    transition: all .5s;
 }
+
 .SlideDownMenu ul li a:hover:after {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
 }
+
 /* Keyframes */
 @-webkit-keyframes fill {
-  0% {
-    width: 0%;
-    height: 1px;
-  }
-  50% {
-    width: 100%;
-    height: 1px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    background: #333;
-  }
+    0% {
+        width: 0%;
+        height: 1px;
+    }
+
+    50% {
+        width: 100%;
+        height: 1px;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        background: #333;
+    }
 }
+
 /* Keyframes */
 @-webkit-keyframes circle {
-  0% {
-    width: 1px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    height: 1px;
-    z-index: -1;
-    background: #eee;
-    border-radius: 100%;
-  }
-  100% {
-    background: #aaa;
-    height: 5000%;
-    width: 5000%;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 0;
-  }
+    0% {
+        width: 1px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 1px;
+        z-index: -1;
+        background: #eee;
+        border-radius: 100%;
+    }
+
+    100% {
+        background: #aaa;
+        height: 5000%;
+        width: 5000%;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0;
+    }
+}
+
+
+/*========================== Map ==========================*/
+.googlemap {
+    height: 430px;
 }

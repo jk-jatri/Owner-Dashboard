@@ -108,7 +108,7 @@
 }
 
 .tab_menu_set .tab_menu.active,
-.tab_menu_set .show>.tab_menu{
+.tab_menu_set .show>.tab_menu {
     color: #FF6347 !important;
     text-align: start !important;
     background-color: rgb(255, 99, 71, 8%) !important;
@@ -118,25 +118,25 @@
     border-radius: 0;
 }
 
-.tab_menu{
+.tab_menu {
     text-align: start;
 }
 
-.tab_menu_set{
+.tab_menu_set {
     width: 20% !important;
 }
 
-.tab_data{
+.tab_data {
     width: 80% !important;
 }
 
 .tab_menu_set,
-.tab_filter{
+.tab_filter {
     background-color: #fff;
     height: 100%;
 }
 
-.tab_filter{
+.tab_filter {
     width: 30% !important;
     box-shadow: 13px 7px 14px 4px #dddddd80;
     z-index: 1;
@@ -147,15 +147,17 @@
     overflow-y: scroll;
 }
 
-.tab_filter_result{
+.tab_filter_result {
     width: 70% !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-#myInput:focus{
+
+#myInput:focus {
     border: 0;
     outline: 0;
 }
+
 #myInput {
     background-image: url('/images/searchicon.png');
     background-position: 10px 12px;
@@ -168,11 +170,11 @@
     margin-bottom: 12px;
 }
 
-.filter_btn_row{
+.filter_btn_row {
     margin: 10px 5px;
 }
 
-.filter_btn{
+.filter_btn {
     background-color: #EBEBEB !important;
     border-radius: 25px !important;
     border: none;
@@ -183,53 +185,54 @@
 
 .filter_btn.active,
 .filter_btn:focus,
-.filter_btn:hover{
+.filter_btn:hover {
     background-color: #FF6347 !important;
     color: #fff !important;
     transition: 0.4s;
 }
 
-.filter_content div{
+.filter_content div {
     padding: 10px 5px;
     border-bottom: 1px solid #dddddd91;
 }
-.filter_content{
+
+.filter_content {
     text-decoration: none;
 }
 
-.filter_content div h5{
+.filter_content div h5 {
     font-size: 16px;
     color: #000;
 }
 
-.filter_content div p{
+.filter_content div p {
     color: #666666;
     line-height: 8px;
 }
 
-.filter_content div p:first-child{
+.filter_content div p:first-child {
     font-size: 15px !important;
 }
 
-.filter_content div p:last-child{
+.filter_content div p:last-child {
     font-size: 14px !important;
 }
 
-.filter_content:hover div{
+.filter_content:hover div {
     background-color: rgb(255, 99, 71, 7%);
     transition: 0.3s;
 }
 
-.filter_content:hover h5{
+.filter_content:hover h5 {
     color: #FF6347;
     transition: 0.4s;
 }
 
-.status_on{
+.status_on {
     color: #42B32D;
 }
 
-.status_off{
+.status_off {
     color: #FF3E14;
 }
 
@@ -238,43 +241,48 @@
 .tab_filter::-webkit-scrollbar {
     width: 5px;
 }
-  
+
 .tab_filter::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
-   
+
 .tab_filter::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
 }
-  
+
 .tab_filter::-webkit-scrollbar-thumb:hover {
-    background: #FF6347; 
+    background: #FF6347;
 }
 
 /* Bus Company Tab Start */
-.bus_detail_table{
+.bus_detail_table {
     width: 100%;
 }
 
-.bus_detail_table table tbody tr:nth-child(odd){
+.bus_detail_table table tbody tr:nth-child(odd) {
     background-color: #F9F9F9;
 }
 
-.bus_detail_table table tbody tr:nth-child(even){
+.bus_detail_table table tbody tr:nth-child(even) {
     background-color: #FFFFFF;
 }
 
-.bus_detail_table table thead{
+.bus_detail_table table thead {
     background-color: #fff;
     border-bottom: none;
 }
 
 .bus_detail_table table thead tr,
-.bus_detail_table table tbody tr{
+.bus_detail_table table tbody tr {
     vertical-align: middle;
 }
 
 .bus_detail_table table thead tr td,
-.bus_detail_table table tbody tr td{
+.bus_detail_table table tbody tr td {
     width: 33%;
+}
+
+/*========================== Map ==========================*/
+.googlemap {
+    height: 100%;
 }
