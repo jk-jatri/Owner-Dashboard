@@ -286,3 +286,44 @@
 .googlemap {
     height: 100%;
 }
+
+/* Filter button Design */
+.filter_modal_btn{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    padding: 8px 15px;
+    color: #FF6347;
+}
+.filter_modal_btn:hover{
+    background: #FF6347;
+    color: #FFFFFF;
+    transition: 0.4s;
+}
+
+.modal_close_btn{
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    color: #000;
+    font-size: 28px;
+}
+.modal_close_btn:hover{
+    color: #FF6347;
+    transition: 0.4s;
+}
+
+.modal_animation{
+    animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom{
+    from{
+        transform:scale(0)
+    } 
+    to{
+        transform:scale(1)
+    }
+}

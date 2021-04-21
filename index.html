@@ -145,9 +145,160 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="v-pills-ride">Ride Details</div>
+                            <div class="tab-pane fade" id="v-pills-ride">
+                                <div class="row">
+                                    <div class="company_details">
+                                        <div class="row my-3">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Rides</h5>
+                                                <!-- Button trigger modal -->
+                                                <button class="filter_modal_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Filter <i class="fas fa-filter"></i></button>
 
-                            <div class="tab-pane fade" id="v-pills-tickets">Tickets Detail</div>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content modal_animation">
+                                                            <div class="modal-header">
+                                                                <h5 class="text-center">Filter</h5>
+                                                                <button type="button" class="modal_close_btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                            
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Understood</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="table-responsive bus_detail_table">
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Bus Company Name</td>
+                                                            <td>Vehicle Registration Number</td>
+                                                            <td>Ride ID</td>
+                                                            <td>Seat</td>
+                                                            <td>Fare</td>
+                                                            <td>Date</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Dhaka Metro: BA:11-9854</td>
+                                                            <td>CFSZM404</td>
+                                                            <td>1</td>
+                                                            <td>৳50</td>
+                                                            <td>4:30 PM, 23 April 2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Dhaka Metro: BA:11-9854</td>
+                                                            <td>CFSZM404</td>
+                                                            <td>1</td>
+                                                            <td>৳50</td>
+                                                            <td>4:30 PM, 23 April 2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Dhaka Metro: BA:11-9854</td>
+                                                            <td>CFSZM404</td>
+                                                            <td>1</td>
+                                                            <td>৳50</td>
+                                                            <td>4:30 PM, 23 April 2021</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-tickets">
+                                <div class="row">
+                                    <div class="company_details">
+                                        <div class="row my-3">
+                                            <div class="d-flex justify-content-between">
+                                                <h5>Tickets Details</h5>
+                                                <!-- Button trigger modal -->
+                                                <button class="filter_modal_btn" data-bs-toggle="modal" data-bs-target="#ticket_modal">Filter <i class="fas fa-filter"></i></button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="ticket_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content modal_animation">
+                                                            <div class="modal-header">
+                                                                <h5 class="text-center">Filter</h5>
+                                                                <button type="button" class="modal_close_btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                            
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Understood</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="table-responsive bus_detail_table">
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Bus Company Name</td>
+                                                            <td>Vehicle Registration Number</td>
+                                                            <td>From-to</td>
+                                                            <td>User Name</td>
+                                                            <td>Total Ticket</td>
+                                                            <td>Fare</td>
+                                                            <td>Date</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Dhaka Metro: BA:11-9854</td>
+                                                            <td>Shyamoli - Banani Rd 13</td>
+                                                            <td>Habibur Rahman</td>
+                                                            <td>1</td>
+                                                            <td>৳50</td>
+                                                            <td>4:30 PM, 23 April 2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Dhaka Metro: BA:11-9854</td>
+                                                            <td>Shyamoli - Banani Rd 13</td>
+                                                            <td>Habibur Rahman</td>
+                                                            <td>1</td>
+                                                            <td>৳50</td>
+                                                            <td>4:30 PM, 23 April 2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Dhaka Metro: BA:11-9854</td>
+                                                            <td>Shyamoli - Banani Rd 13</td>
+                                                            <td>Habibur Rahman</td>
+                                                            <td>1</td>
+                                                            <td>৳50</td>
+                                                            <td>4:30 PM, 23 April 2021</td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="tab-pane fade" id="v-pills-allvehicle">All Vehicle Detail</div>
 
