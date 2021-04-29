@@ -3,9 +3,9 @@
     src: url(../fonts/HelveticaNeue.ttf);
 }
 
-/* body{
-    height: 100vh;
-} */
+body{
+    font-family: Helvetica Neue;
+}
 
 .bg_color {
     background-color: #F7F7F7;
@@ -105,6 +105,10 @@
 .no-gutter {
     padding: 0;
     margin: 0;
+}
+
+.main_class{
+    height: 100vh;
 }
 
 .tab_menu_set .tab_menu.active,
@@ -236,6 +240,18 @@
     color: #FF3E14;
 }
 
+.detail_modal_btn{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.detail_modal_btn:hover{
+    transition: 0.4s;
+    color: #ff6347;
+
+}
+
 
 /* Custom ScrollBar */
 .tab_filter::-webkit-scrollbar {
@@ -270,6 +286,7 @@
 .bus_detail_table table thead {
     background-color: #fff;
     border-bottom: none;
+    font-size: 14px;
 }
 
 .bus_detail_table table thead tr,
@@ -280,6 +297,13 @@
 .bus_detail_table table thead tr td,
 .bus_detail_table table tbody tr td {
     width: 33%;
+    font-size: 14px;
+}
+
+/* ride tab design starts */
+.ride_table{
+    table-layout: fixed;
+    font-size: 14px;
 }
 
 /*========================== Map ==========================*/
@@ -317,6 +341,7 @@
 
 .modal_animation{
     animation: animatezoom 0.6s;
+    border-radius: 17px !important;
 }
 
 @keyframes animatezoom{
@@ -326,4 +351,23 @@
     to{
         transform:scale(1)
     }
+}
+
+/* ============================= pagination Design start =========================== */
+
+.page-item.active .page-link,
+.page-item:hover .page-link,
+.page-item:focus .page-link {
+    color: #ff6347 !important;
+    background-color: #ff634740 !important;
+}
+.page-item .page-link {
+    z-index: 3;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none !important;
+    font-weight: 600 !important;
+    margin: 0 4px !important;
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 4%) !important;
 }

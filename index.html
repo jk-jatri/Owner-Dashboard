@@ -47,7 +47,7 @@
         <main class="mt-2">
             <div class="container-fluid no-gutter">
                 <div class="row">
-                    <div class="d-flex align-items-start">
+                    <div class="main_class d-flex align-items-start">
                         <div class="nav flex-column tab_menu_set nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
                             <button class="nav-link tab_menu active" data-bs-toggle="pill" data-bs-target="#v-pills-vehicle"><span><i class="fas fa-bus-alt"></i></span> Vehicle</button>
@@ -105,7 +105,7 @@
                             <div class="tab-pane fade" id="v-pills-bus">
                                 <div class="row">
                                     <div class="company_details">
-                                        <div class="row">
+                                        <div class="row my-3">
                                             <h5>Bus Company</h5>
                                         </div>
                                         <div class="row">
@@ -144,12 +144,12 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <!-- Ride Tab Start -->
                             <div class="tab-pane fade" id="v-pills-ride">
                                 <div class="row">
                                     <div class="company_details">
                                         <div class="row my-3">
-                                            <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-between align-items-center">
                                                 <h5>Rides</h5>
                                                 <!-- Button trigger modal -->
                                                 <button class="filter_modal_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Filter <i class="fas fa-filter"></i></button>
@@ -165,10 +165,6 @@
                                                             <div class="modal-body">
                                                             
                                                             </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                <button type="button" class="btn btn-primary">Understood</button>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -176,7 +172,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="table-responsive bus_detail_table">
-                                                <table class="table table-borderless">
+                                                <table class="table table-borderless w-100 ride_table">
                                                     <thead>
                                                         <tr>
                                                             <td>Bus Company Name</td>
@@ -189,7 +185,7 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Trust AC Service</td>
                                                             <td>Dhaka Metro: BA:11-9854</td>
                                                             <td>CFSZM404</td>
                                                             <td>1</td>
@@ -197,7 +193,7 @@
                                                             <td>4:30 PM, 23 April 2021</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Trust AC Service</td>
                                                             <td>Dhaka Metro: BA:11-9854</td>
                                                             <td>CFSZM404</td>
                                                             <td>1</td>
@@ -205,7 +201,7 @@
                                                             <td>4:30 PM, 23 April 2021</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Trust AC Service</td>
                                                             <td>Dhaka Metro: BA:11-9854</td>
                                                             <td>CFSZM404</td>
                                                             <td>1</td>
@@ -224,7 +220,7 @@
                                 <div class="row">
                                     <div class="company_details">
                                         <div class="row my-3">
-                                            <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-between align-items-center">
                                                 <h5>Tickets Details</h5>
                                                 <!-- Button trigger modal -->
                                                 <button class="filter_modal_btn" data-bs-toggle="modal" data-bs-target="#ticket_modal">Filter <i class="fas fa-filter"></i></button>
@@ -240,10 +236,6 @@
                                                             <div class="modal-body">
                                                             
                                                             </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                <button type="button" class="btn btn-primary">Understood</button>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -251,7 +243,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="table-responsive bus_detail_table">
-                                                <table class="table table-borderless">
+                                                <table class="table table-borderless w-100 ride_table">
                                                     <thead>
                                                         <tr>
                                                             <td>Bus Company Name</td>
@@ -265,7 +257,7 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Trust AC Service</td>
                                                             <td>Dhaka Metro: BA:11-9854</td>
                                                             <td>Shyamoli - Banani Rd 13</td>
                                                             <td>Habibur Rahman</td>
@@ -274,7 +266,7 @@
                                                             <td>4:30 PM, 23 April 2021</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Trust AC Service</td>
                                                             <td>Dhaka Metro: BA:11-9854</td>
                                                             <td>Shyamoli - Banani Rd 13</td>
                                                             <td>Habibur Rahman</td>
@@ -283,7 +275,7 @@
                                                             <td>4:30 PM, 23 April 2021</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span><img class="mx-2" src="images/bus_icon.png" alt=""></span> Trust AC Service</td>
+                                                            <td>Trust AC Service</td>
                                                             <td>Dhaka Metro: BA:11-9854</td>
                                                             <td>Shyamoli - Banani Rd 13</td>
                                                             <td>Habibur Rahman</td>
@@ -300,9 +292,230 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="v-pills-allvehicle">All Vehicle Detail</div>
+                            <div class="tab-pane fade" id="v-pills-allvehicle">
+                                <div class="row">
+                                    <div class="company_details">
+                                        <div class="row my-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5>All Vehicle</h5>
+                                                <!-- Button trigger modal -->
+                                                <button class="filter_modal_btn" data-bs-toggle="modal" data-bs-target="#vehicle_modal">Filter <i class="fas fa-filter"></i></button>
 
-                            <div class="tab-pane fade" id="v-pills-counterwise">Counter Wise Report Detail</div>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="vehicle_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content modal_animation">
+                                                            <div class="modal-header">
+                                                                <h5 class="text-center">Filter</h5>
+                                                                <button type="button" class="modal_close_btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="table-responsive bus_detail_table">
+                                                <table class="table table-borderless w-100 ride_table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Bus Company Name</td>
+                                                            <td>Vehicle Registration Number</td>
+                                                            <td>Road</td>
+                                                            <td>GPS Status</td>
+                                                            <td>Subscribed</td>
+                                                            <td>Added</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Trust AC Service</td>
+                                                            <td>Dhaka Metro: BA:11-9854</td>
+                                                            <td>Savar</td>
+                                                            <td>On</td>
+                                                            <td>Yes</td>
+                                                            <td>4:30 PM, 23 April 2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Trust AC Service</td>
+                                                            <td>Dhaka Metro: BA:11-9854</td>
+                                                            <td>Savar</td>
+                                                            <td>On</td>
+                                                            <td>Yes</td>
+                                                            <td>4:30 PM, 23 April 2021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Trust AC Service</td>
+                                                            <td>Dhaka Metro: BA:11-9854</td>
+                                                            <td>Savar</td>
+                                                            <td>On</td>
+                                                            <td>Yes</td>
+                                                            <td>4:30 PM, 23 April 2021</td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-end">
+                                                    <li class="page-item disabled">
+                                                        <span class="page-link">Previous</span>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item active" aria-current="page">
+                                                        <span class="page-link">2</span>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-counterwise">
+                                <div class="row">
+                                    <div class="company_details">
+                                        <div class="row my-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5>Counter-Wise Report</h5>
+                                                <!-- Button trigger modal -->
+                                                <button class="filter_modal_btn" data-bs-toggle="modal" data-bs-target="#counter_report_modal">Filter <i class="fas fa-filter"></i></button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="counter_report_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content modal_animation">
+                                                            <div class="modal-header">
+                                                                <h5 class="text-center">Filter</h5>
+                                                                <button type="button" class="modal_close_btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="table-responsive bus_detail_table">
+                                                <table class="table table-borderless w-100 ride_table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Bus Company Name</td>
+                                                            <td>Counter</td>
+                                                            <td>Date</td>
+                                                            <td>Total Seat</td>
+                                                            <td>Fare</td>
+                                                            <td>Total Detail</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Trust AC Service</td>
+                                                            <td>Gulshan Chaka (Road A)</td>
+                                                            <td>23 April 2021</td>
+                                                            <td>1140</td>
+                                                            <td>৳50</td>
+                                                            <td><a href="#" class="detail_modal_btn" data-bs-toggle="modal" data-bs-target="#detail_view_modal">View Details</a>
+                                                                <div class="modal fade" id="detail_view_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-dialog-centered">
+                                                                        <div class="modal-content modal_animation">
+                                                                            <div class="modal-header">
+                                                                                <h5 class="text-center">Filter</h5>
+                                                                                <button type="button" class="modal_close_btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                                                            
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Trust AC Service</td>
+                                                            <td>Gulshan Chaka (Road A)</td>
+                                                            <td>23 April 2021</td>
+                                                            <td>1140</td>
+                                                            <td>৳50</td>
+                                                            <td><a href="#" class="detail_modal_btn" data-bs-toggle="modal" data-bs-target="#detail_view_modal1">View Details</a>
+                                                                <div class="modal fade" id="detail_view_modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-dialog-centered">
+                                                                        <div class="modal-content modal_animation">
+                                                                            <div class="modal-header">
+                                                                                <h5 class="text-center">Filter</h5>
+                                                                                <button type="button" class="modal_close_btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                                                            
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Trust AC Service</td>
+                                                            <td>Gulshan Chaka (Road A)</td>
+                                                            <td>23 April 2021</td>
+                                                            <td>1140</td>
+                                                            <td>৳50</td>
+                                                            <td><a href="#" class="detail_modal_btn" data-bs-toggle="modal" data-bs-target="#detail_view_modal2">View Details</a>
+                                                                <div class="modal fade" id="detail_view_modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-dialog-centered">
+                                                                        <div class="modal-content modal_animation">
+                                                                            <div class="modal-header">
+                                                                                <h5 class="text-center">Filter</h5>
+                                                                                <button type="button" class="modal_close_btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                                                            
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-end">
+                                                    <li class="page-item disabled">
+                                                        <span class="page-link">Previous</span>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item active" aria-current="page">
+                                                        <span class="page-link">2</span>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>

@@ -1,3 +1,4 @@
+/* Extra large Device */
 @media only screen and (min-width: 1400px){
     .font_detail{
         font-size: 12px !important;
@@ -7,6 +8,7 @@
     }
 }
 
+/* Extra Large Device */
 @media only screen and (min-width: 1200px) and (max-width: 1399px){
     .font_detail,
     .dashboard_nav li a,
@@ -31,6 +33,7 @@
     }
 }
 
+/* Large Device */
 @media only screen and (min-width: 992px) and (max-width: 1199px){
     .font_detail,
     .dashboard_nav li a,
@@ -65,7 +68,8 @@
     }
 }
 
-@media only screen and (max-width: 991px) and (min-width: 768px){
+/* Medium Device */
+@media only screen and (min-width: 768px) and (max-width: 991px){
     .font_detail,
     .dashboard_nav li a,
     .coach_detail tr th,
@@ -85,6 +89,7 @@
     }
 }
 
+/* Small Device */
 @media only screen and (max-width: 767px){
     .font_detail,
     .dashboard_nav li a,
@@ -104,3 +109,6 @@
     }
 }
 
+/* Extra Small Device */
+@media only screen and (max-width: 575px){
+}
