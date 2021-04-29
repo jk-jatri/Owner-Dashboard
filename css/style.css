@@ -353,13 +353,24 @@ body{
     }
 }
 
+
+/* ============================= pagination Design start =========================== */
+
+.common_modal_btn {
+    padding: 10px;
+    border: none;
+    background-color: transparent !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 /* ============================= pagination Design start =========================== */
 
 .page-item.active .page-link,
 .page-item:hover .page-link,
 .page-item:focus .page-link {
     color: #ff6347 !important;
-    background-color: #ff634740 !important;
+    background-color: #ff634724 !important;
 }
 .page-item .page-link {
     z-index: 3;
@@ -370,4 +381,31 @@ body{
     font-weight: 600 !important;
     margin: 0 4px !important;
     box-shadow: 0px 4px 8px rgb(0 0 0 / 4%) !important;
+}
+
+/* ============================= Custom Select Menu Design start =========================== */
+
+.custom_select_menu{
+    padding: 10px 20px;
+    margin: 10px auto;
+    border: 1px solid #F7F7F7;
+    border-radius: 7px !important;
+    box-shadow: inset 0px 0px 13px 2px #F7F7F7;
+    color: #868E96;
+    background-color: #F7F7F7 !important;
+    cursor: pointer;
+}
+
+.custom_select_menu:focus{
+    outline: 0 !important;
+    border: 1px solid #F7F7F7 !important;
+    box-shadow: inset 0px 0px 13px 2px #F7F7F7 !important;
+}
+
+.corporate_color{
+    color: #FF6347;
+}
+
+.default_color{
+    color: #868E96;
 }
